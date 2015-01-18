@@ -9,7 +9,7 @@ This module basic overrides some basic CSS that is found in the SilverStripe fra
 require: "mediabeast/flat-admin": "dev-master"
 ```
 ###Download:
-Clone or download this repo, copy it into your website folder, rename the folder to flat-admin and then run `dev/build`.
+Clone or download this repo, copy it into your website folder, rename the folder to `flat-admin` and then run `dev/build`.
 
 ###Screenshots:
 ![Flat Theme](http://i.imgur.com/JgaAw2G.png "Flat Theme")
