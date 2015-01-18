@@ -6,7 +6,7 @@ This module basic overrides some basic CSS that is found in the SilverStripe fra
 ###Installation:
 ####Composer:
 ```
-require: "mediabeast/flat-admin": "*"
+require: "mediabeast/flat-admin": "dev-master"
 ```
 ###Download:
 Clone or download this repo, copy it into your website folder, rename the folder to `flat-admin` and then run `dev/build`.
