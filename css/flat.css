@@ -37,15 +37,41 @@
 
 .cms-content-batchactions.inactive .view-mode-batchactions-wrapper { border: 1px solid #aaa; background-color: #D9D9D9; background: #D9D9D9; border-radius: 0; border-top-left-radius: 0px; border-bottom-left-radius: 0px; }
 
-/**
-* Primary styles which sit on top of screen, with different tab colors.
-* TODO Only use one "primary" selector and fix HTMLEditorField TabSet addExtraClass()
-*/
 .ui-tabs.cms-tabset-primary .ui-tabs-nav, .ui-tabs .ui-tabs-nav.cms-tabset-nav-primary, .ui-tabs .cms-content-header-tabs .ui-tabs-nav { border-left: 1px solid #b3b3b3; }
-.ui-tabs.cms-tabset-primary .ui-tabs-nav .ui-state-default, .ui-tabs .ui-tabs-nav.cms-tabset-nav-primary .ui-state-default, .ui-tabs .cms-content-header-tabs .ui-tabs-nav .ui-state-default { background-color: #1b354c; background: #1b354c; outline: none; border-top: none; border-right-color: #070e14; border-left-color: #284f72; }
+.ui-tabs.cms-tabset-primary .ui-tabs-nav .ui-state-default, .ui-tabs .ui-tabs-nav.cms-tabset-nav-primary .ui-state-default, .ui-tabs .cms-content-header-tabs .ui-tabs-nav .ui-state-default { background-color: #1b354c; background: #1b354c; outline: none; border-top: none; border-right-color: #1e3a54; border-left-color: #1c3850; }
 .ui-tabs.cms-tabset-primary .ui-tabs-nav .ui-state-default a, .ui-tabs .ui-tabs-nav.cms-tabset-nav-primary .ui-state-default a, .ui-tabs .cms-content-header-tabs .ui-tabs-nav .ui-state-default a { color: white; text-shadow: none; }
 .ui-tabs.cms-tabset-primary .ui-tabs-nav .ui-state-active, .ui-tabs .ui-tabs-nav.cms-tabset-nav-primary .ui-state-active, .ui-tabs .cms-content-header-tabs .ui-tabs-nav .ui-state-active { background: #e6eaed; border-top: none; border-right-color: #b3b3b3; border-left-color: #ECEFF1; }
 .ui-tabs.cms-tabset-primary .ui-tabs-nav .ui-state-active a, .ui-tabs .ui-tabs-nav.cms-tabset-nav-primary .ui-state-active a, .ui-tabs .cms-content-header-tabs .ui-tabs-nav .ui-state-active a { color: #1f1f1f; text-shadow: none; }
+
+.icon-16.icon-assetadmin { background: url("../images/picture.png"); }
+
+.icon-16.icon-cmsmain { background: url("../images/pencil.png"); }
+
+.icon-16.icon-cmspagescontroller { background: url("../images/network.png"); }
+
+.icon-16.icon-cmssettingscontroller { background: url("../images/gears.png"); }
+
+.icon-16.icon-securityadmin { background: url("../images/community.png"); }
+
+.icon-16.icon-reportadmin { background: url("../images/pie-chart.png"); }
+
+.icon-16.icon-commentadmin { background: url("../images/blog.png"); }
+
+.icon-16.icon-help { background: url("../images/information.png"); }
+
+.ui-icon.btn-icon-add { background: url("../images/add.png"); }
+
+.ui-icon.btn-icon-accept { background: url("../images/accept.png"); }
+
+.ui-icon.btn-icon-pencil { background: url("../images/edit.png"); }
+
+.ui-icon.btn-icon-cross-circle { background: url("../images/cross.png"); margin-top: -6px; }
+
+.col-buttons .action.action-detail.edit-link { width: 16px; height: 16px; background: url("../images/edit.png") no-repeat top center; }
+
+.ss-ui-action-constructive .ui-icon.btn-icon-accept { background: url("../images/accept-light.png"); }
+
+.cms-content-header .cms-content-header-info .section-icon { display: none; }
 
 /** Styles for the left hand side menu and header for the admin panels.  Take into consideration CSS selector performance.  @package framework @subpackage admin */
 .cms-logo-header { background: #1b354c; border-bottom: 1px solid #183044; }

@@ -1,0 +1,20 @@
+{
+  "name": "mediabeast/flat-admin",
+  "description": "Custom CSS theme for SilverStripe 3 Admin Interface",
+  "type": "silverstripe-module",
+  "homepage": "https://github.com/mediabeastnz/silverstripe-flat-admin",
+  "keywords": ["silverstripe", "theme", "flat", "admin"],
+  "authors": [
+    {
+      "name": "Myles Beardsmore",
+      "email": "mediabeastnz@gmail.com"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/mediabeastnz/silverstripe-flat-admin/issues"
+  },
+  "require": {
+    "silverstripe/framework": "~3.1",
+    "silverstripe/cms": "~3.1"
+  }
+}
