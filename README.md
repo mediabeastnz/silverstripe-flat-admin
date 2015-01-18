@@ -1,4 +1,4 @@
-# silverstripe-flat-admin
+# Flat Admin for SilverStripe
 ####Custom CSS for the SilverStripe CMS Admin Interface.
 
 This module basic overrides some basic CSS that is found in the SilverStripe framework.
