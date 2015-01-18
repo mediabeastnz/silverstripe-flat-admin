@@ -1,0 +1,97 @@
+.cms-menu {
+	.cms-panel-toggle {
+		&.south {
+			border-top: 1px solid darken($color-base, 2%);
+			-moz-box-shadow: none;
+			-webkit-box-shadow: none;
+			box-shadow: none;
+		}
+		a {
+			span {
+				color: $color-text-light;
+			}
+
+			&.toggle-expand {
+			}
+		}
+	}
+}
+
+
+.cms-content-header {
+	background: {
+		image: url(../../framework/admin/images/textures/cms_content_header.png);
+		repeat: repeat;
+		position: left bottom;
+		color: #eee;
+	}
+}
+
+.cms-content-tools {
+	background: #eee;
+}
+
+.cms-content-batchactions {
+	.view-mode-batchactions-wrapper {
+		border: 1px solid #aaa;
+		background-color: #D9D9D9;
+		background: #D9D9D9;
+		border-radius: 0;
+		border-top-left-radius: 0px;
+		border-bottom-left-radius: 0px;
+	}
+}
+
+.cms-content-batchactions.inactive {
+	.view-mode-batchactions-wrapper {
+		border: 1px solid #aaa;
+		background-color: #D9D9D9;
+		background: #D9D9D9;
+		border-radius: 0;
+		border-top-left-radius: 0px;
+		border-bottom-left-radius: 0px;
+	}
+}
+
+
+/**
+* Primary styles which sit on top of screen, with different tab colors.
+* TODO Only use one "primary" selector and fix HTMLEditorField TabSet addExtraClass()
+*/
+.ui-tabs.cms-tabset-primary .ui-tabs-nav,
+.ui-tabs .ui-tabs-nav.cms-tabset-nav-primary,
+.ui-tabs .cms-content-header-tabs .ui-tabs-nav {
+	border-left: 1px solid darken($color-tab, 15%);
+
+	.ui-state-default {
+		background-color: $color-base;
+		background: $color-base;
+		outline: none;
+
+		border-top:none;
+		border: {
+			right-color: darken($color-base, 15%);
+			left-color: lighten($color-base, 10%);
+		}
+
+		a{
+			color: $color-text-light;
+			text-shadow: none;
+		}
+
+	}
+
+	.ui-state-active {
+		background:darken($tab-panel-texture-color,2%);
+		border-top: none;
+		border: {
+			right-color: darken($color-tab, 15%); // same color as divider between header and body, needed for IE
+			left-color: $tab-panel-texture-color;
+		}
+
+		a{
+			color: $color-text-dark;
+			text-shadow: none;
+		}
+	}
+}

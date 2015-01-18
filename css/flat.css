@@ -1,0 +1,72 @@
+/** ----------------------------- Theme ------------------------------ */
+/** This file contains the default theme definitions for the admin interface. Please put mostly SCSS variable definitions in here, and leave the actual styling to _style.scss and auxilliary files. */
+/** ----------------------------------------------- Colours ------------------------------------------------ */
+/* Keep as solid colours transparent borders wont work in ie */
+/* Only for use as shadows as they wont work in older browsers */
+/*$color-optional: #a1d2eb !default; */
+/** ----------------------------------------------- Textures ----------------------------------------------- */
+/** ----------------------------------------------- Typography. ------------------------------------------------ */
+/** ----------------------------------------------- Grid Units (px)  We have a vertical rhythm that the grid is based off both x (=horizontal) and y (=vertical). All internal padding and margins are scaled to this and accounting for paragraphs ------------------------------------------------ */
+/** ----------------------------------------------- Application Logo (CMS Logo) Must be 24px x 24px ------------------------------------------------ */
+/** ----------------------------- CMS Components ------------------------------ */
+/** ----------------------------------------------------
+* Buttons
+* ---------------------------------------------------- */
+.cms .ss-ui-button { margin-top: 0px; font-weight: bold; text-decoration: none; line-height: 16px; color: #393939; border: 1px solid #c0c0c2; border-bottom: 1px solid #c0c0c2; cursor: pointer; background-color: #e6e6e6; background: #e6e6e6; white-space: nowrap; -moz-border-radius: 0px; -webkit-border-radius: 0px; -khtml-border-radius: 0px; border-radius: 0px; box-shadow: none; -moz-box-shadow-inset: none; -webkit-box-shadow-inset: none; -khtml-box-shadow-inset: none; /* constructive */ /* destructive */ }
+.cms .ss-ui-button.ui-state-hover, .cms .ss-ui-button:hover { text-decoration: none; background-color: white; }
+.cms .ss-ui-button:active, .cms .ss-ui-button:focus, .cms .ss-ui-button.ui-state-active, .cms .ss-ui-button.ui-state-focus { border: 1px solid #b3b3b3; background-color: white; }
+.cms .ss-ui-button.ss-ui-action-minor span { padding-left: 0; padding-right: 0; }
+.cms .ss-ui-button.ss-ui-action-constructive { text-shadow: none; font-weight: bold; color: white; border-color: #02a781; border-bottom-color: #02a781; background-color: #02a781; background: #02a781; }
+.cms .ss-ui-button.ss-ui-action-constructive.ui-state-hover, .cms .ss-ui-button.ss-ui-action-constructive:hover { border-color: #016b52; background-color: #01755a; background: #01755a; }
+.cms .ss-ui-button.ss-ui-action-constructive:active, .cms .ss-ui-button.ss-ui-action-constructive:focus, .cms .ss-ui-button.ss-ui-action-constructive.ui-state-active, .cms .ss-ui-button.ss-ui-action-constructive.ui-state-focus { background-color: #01755a; background: #01755a; }
+.cms .ss-ui-button.ss-ui-action-destructive { color: #f00; background-color: #e6e6e6; }
+.cms .ss-ui-button.ss-ui-button-small .ui-button-text { font-size: 10px; }
+.cms .ss-ui-button.ui-state-highlight { background-color: #e6e6e6; border: 1px solid #708284; }
+.cms .ss-ui-button.ss-ui-action-minor { background: none; border: 0; color: #393939; text-decoration: underline; }
+.cms .ss-ui-button.ss-ui-action-minor:hover { text-decoration: none; color: #1f1f1f; }
+.cms .ss-ui-button.ss-ui-action-minor:focus, .cms .ss-ui-button.ss-ui-action-minor:active { text-decoration: none; color: #525252; }
+
+.cms-menu .cms-panel-toggle.south { border-top: 1px solid #183044; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
+.cms-menu .cms-panel-toggle a span { color: white; }
+
+.cms-content-header { background-image: url(../../framework/admin/images/textures/cms_content_header.png); background-repeat: repeat; background-position: left bottom; background-color: #eee; }
+
+.cms-content-tools { background: #eee; }
+
+.cms-content-batchactions .view-mode-batchactions-wrapper { border: 1px solid #aaa; background-color: #D9D9D9; background: #D9D9D9; border-radius: 0; border-top-left-radius: 0px; border-bottom-left-radius: 0px; }
+
+.cms-content-batchactions.inactive .view-mode-batchactions-wrapper { border: 1px solid #aaa; background-color: #D9D9D9; background: #D9D9D9; border-radius: 0; border-top-left-radius: 0px; border-bottom-left-radius: 0px; }
+
+/**
+* Primary styles which sit on top of screen, with different tab colors.
+* TODO Only use one "primary" selector and fix HTMLEditorField TabSet addExtraClass()
+*/
+.ui-tabs.cms-tabset-primary .ui-tabs-nav, .ui-tabs .ui-tabs-nav.cms-tabset-nav-primary, .ui-tabs .cms-content-header-tabs .ui-tabs-nav { border-left: 1px solid #b3b3b3; }
+.ui-tabs.cms-tabset-primary .ui-tabs-nav .ui-state-default, .ui-tabs .ui-tabs-nav.cms-tabset-nav-primary .ui-state-default, .ui-tabs .cms-content-header-tabs .ui-tabs-nav .ui-state-default { background-color: #1b354c; background: #1b354c; outline: none; border-top: none; border-right-color: #070e14; border-left-color: #284f72; }
+.ui-tabs.cms-tabset-primary .ui-tabs-nav .ui-state-default a, .ui-tabs .ui-tabs-nav.cms-tabset-nav-primary .ui-state-default a, .ui-tabs .cms-content-header-tabs .ui-tabs-nav .ui-state-default a { color: white; text-shadow: none; }
+.ui-tabs.cms-tabset-primary .ui-tabs-nav .ui-state-active, .ui-tabs .ui-tabs-nav.cms-tabset-nav-primary .ui-state-active, .ui-tabs .cms-content-header-tabs .ui-tabs-nav .ui-state-active { background: #e6eaed; border-top: none; border-right-color: #b3b3b3; border-left-color: #ECEFF1; }
+.ui-tabs.cms-tabset-primary .ui-tabs-nav .ui-state-active a, .ui-tabs .ui-tabs-nav.cms-tabset-nav-primary .ui-state-active a, .ui-tabs .cms-content-header-tabs .ui-tabs-nav .ui-state-active a { color: #1f1f1f; text-shadow: none; }
+
+/** Styles for the left hand side menu and header for the admin panels.  Take into consideration CSS selector performance.  @package framework @subpackage admin */
+.cms-logo-header { background: #1b354c; border-bottom: 1px solid #183044; }
+.cms-logo-header span { color: white; }
+.cms-logo-header span a { color: #3EBAE0; }
+
+.cms-logo { border-bottom: 1px solid #1a2a45; }
+.cms-logo a { background: url("../../framework/admin/images/logo_small.png") no-repeat left center; }
+.cms-logo span { font-weight: bold; font-size: 12px; }
+
+.cms-menu { background: #1b354c; }
+
+.cms-menu-list li a { text-shadow: none; color: white; padding: 11px 5px 11px 8px; background: #1b354c; border-top: 1px solid #1c3850; border-bottom: 1px solid #183044; }
+.cms-menu-list li a:hover { text-decoration: none; background: #1b354c; border-bottom: 1px solid #183044; color: #42c6f3; }
+.cms-menu-list li a:focus, .cms-menu-list li a:active { border-top: 1px solid #1c3850; text-decoration: none; background: #1b354c; color: #42c6f3; }
+.cms-menu-list li ul li a { border-top: 1px solid #1e3a54; }
+.cms-menu-list li.current a { color: white; text-shadow: none; border-top: 1px solid #1c3850; border-bottom: 1px solid #183044; background: #0c8db9; }
+.cms-menu-list li.current ul { border-top: none; display: block; }
+.cms-menu-list li.current li { background-color: #12b8f0; }
+.cms-menu-list li.current li a { color: white; background: none; border-top: 1px solid #2fc0f2; border-bottom: 1px solid #0c94c3; }
+.cms-menu-list li.current li a.current, .cms-menu-list li.current li a:hover { background: #2abff1; border-top: 1px solid #2abff1; color: white; }
+.cms-menu-list li.current li a:focus { background: #0ea7db; border-top: 1px solid #0c94c3; color: white; }
+.cms-menu-list li.current li.current { background: #2abff1; border-top: 1px solid #2abff1; border-top: none; }
+.cms-menu-list li.current li.current a { color: white; }

@@ -1,0 +1,122 @@
+/**
+ * Styles for the left hand side menu and header for the admin panels.
+ *
+ * Take into consideration CSS selector performance.
+ *
+ * @package framework
+ * @subpackage admin
+ */
+
+.cms-logo-header {
+	background: $color-base;
+	border-bottom: 1px solid darken($color-base, 2%);
+
+	span {
+		color: $color-text-light;
+
+		a {
+			color: $color-text-dark-link;
+		}
+	}
+}
+
+.cms-logo {
+	border-bottom: 1px solid lighten($color-dark-bg,4%);
+
+	a {
+		background: $application-logo-small no-repeat left center;
+	}
+	span {
+		font-weight: bold;
+		font-size: $font-base-size;
+	}
+}
+
+.cms-menu {
+	background: $color-base;
+}
+
+.cms-menu-list {
+	li {
+		a {
+			text-shadow: none;
+			color: $color-text-light;
+			padding: (1.5 * $grid-y - 1) 5px (1.5 * $grid-y - 1) 8px;
+			background: $color-base;
+			border-top: 1px solid lighten($color-base, 1%);
+			border-bottom: 1px solid darken($color-base, 2%);
+
+			&:hover {
+				text-decoration: none;
+				background: $color-base;
+				border-bottom: 1px solid darken($color-base, 2%);
+				color: #42c6f3;
+
+			}
+			&:focus,
+			&:active {
+				border-top: 1px solid lighten($color-base, 1%);
+				text-decoration: none;
+				background: $color-base;
+				color: #42c6f3;
+
+			}
+
+		}
+		ul li a {
+			border-top: 1px solid lighten($color-base, 2%);
+		}
+
+		&.current { //need to apply current stlye to flyout also (at least line height)
+			a {
+				color: $color-text-light;
+				text-shadow: none;
+				border-top: 1px solid lighten($color-base, 1%);
+				border-bottom: 1px solid darken($color-base, 2%);
+				background: darken($color-menu-button, 22%);
+
+			}
+
+			ul {
+				border-top: none;
+				display: block;
+			}
+
+			li {
+				background-color: darken($color-menu-button, 10%);
+				a {
+					color: lighten($color-menu-button, 45%);
+				 	background: none;
+					border-top: 1px solid darken($color-menu-button,4%);
+					border-bottom: 1px solid darken($color-menu-button, 20%);
+
+					&.current,
+					&:hover {
+						background: darken($color-menu-button, 5%);
+						border-top: 1px solid darken($color-menu-button, 5%);
+						color: $color-text-light;
+					}
+
+					&:focus {
+						background: darken($color-menu-button, 15%);
+						border-top: 1px solid darken($color-menu-button, 20%);
+						color: lighten($color-menu-button, 60%);
+					}
+
+				}
+
+				&.current {
+					background: darken($color-menu-button, 5%);
+					border-top: 1px solid darken($color-menu-button, 5%);
+					border-top: none;
+					a {
+						color: $color-text-light;
+					}
+				}
+
+			}
+		}
+
+	}
+
+}

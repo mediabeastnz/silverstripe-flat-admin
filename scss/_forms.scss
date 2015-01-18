@@ -1,0 +1,101 @@
+/** ----------------------------------------------------
+* Buttons
+* ---------------------------------------------------- */
+
+.cms {
+	.ss-ui-button {
+		margin-top:0px;
+		font-weight: bold;
+		text-decoration: none;
+		line-height: $grid-y * 2;
+		color: lighten($color-text-dark, 10%);
+		border: 1px solid $color-button-generic-border;
+		border-bottom: 1px solid $color-button-generic-border;
+		cursor: pointer;
+		background-color: $color-button-generic;
+		background: $color-button-generic;
+		white-space: nowrap;
+		-moz-border-radius: 0px;
+		-webkit-border-radius: 0px;
+		-khtml-border-radius: 0px;
+		border-radius: 0px;
+		box-shadow: none;
+		-moz-box-shadow-inset: none;
+		-webkit-box-shadow-inset: none;
+		-khtml-box-shadow-inset: none;
+
+		&.ui-state-hover, &:hover {
+			text-decoration: none;
+			background-color: lighten($color-button-generic, 10%);
+		}
+
+		&:active, &:focus, &.ui-state-active, &.ui-state-focus {
+			border: 1px solid darken($color-button-generic, 20%);
+			background-color: lighten($color-button-generic, 10%);
+		}
+
+		&.ss-ui-action-minor {
+			span {
+				padding-left: 0;
+				padding-right: 0;
+			}
+		}
+
+		/* constructive */
+		&.ss-ui-action-constructive {
+			text-shadow:none;
+			font-weight: bold;
+			color: $color-text-light;
+			border-color: #02a781;
+			border-bottom-color: #02a781;
+			background-color: #02a781;
+			background: #02a781;
+
+			&.ui-state-hover, &:hover {
+				border-color: #016b52;
+				background-color: #01755a;
+				background: #01755a;
+			}
+			&:active, &:focus, &.ui-state-active, &.ui-state-focus {
+				background-color: #01755a;
+				background: #01755a;
+			}
+		}
+
+		/* destructive */
+		&.ss-ui-action-destructive {
+			color: $color-button-destructive;
+			background-color: $color-button-generic;
+		}
+
+		&.ss-ui-button-small {
+			.ui-button-text {
+				font-size: $font-base-size - 2;
+			}
+		}
+
+		&.ui-state-highlight {
+			background-color: $color-button-highlight;
+			border: 1px solid $color-button-highlight-border;
+		}
+
+		&.ss-ui-action-minor {
+			background: none;
+			border: 0;
+			color: lighten($color-text-dark, 10%);
+			text-decoration: underline;
+
+			&:hover {
+				text-decoration: none;
+				color: $color-text-dark;
+			}
+			&:focus,
+			&:active {
+				text-decoration: none;
+				color: lighten($color-text-dark, 20%);
+			}
+		}
+
+	}
+
+}
