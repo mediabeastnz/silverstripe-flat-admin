@@ -10,6 +10,6 @@ This module basic overrides some basic CSS that is found in the SilverStripe fra
 - remove any textures and dropwshadows in other parts of the interface.
 
 ###Screenshots:
-![Flat Theme](http://imgur.com/Old4ppO "Flat Theme")
+![Flat Theme](http://i.imgur.com/Old4ppO.png "Flat Theme")
 
-![Flat Theme](http://imgur.com/NSIiNaw "Flat Theme")
+![Flat Theme](http://i.imgur.com/NSIiNaw.png "Flat Theme")
