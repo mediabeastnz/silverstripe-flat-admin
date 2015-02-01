@@ -12,7 +12,7 @@ require: "mediabeast/flat-admin": "dev-master"
 Clone or download this repo, copy it into your website folder, rename the folder to `flat-admin` and then run `dev/build`.
 
 ###Screenshots:
-![Flat Theme](http://i.imgur.com/JgaAw2G.png "Flat Theme")
+![Flat Theme](http://i.imgur.com/QnN3wPz.png "Flat Theme")
 
 ![Flat Theme](http://i.imgur.com/anH4Uv6.png "Flat Theme")
 
