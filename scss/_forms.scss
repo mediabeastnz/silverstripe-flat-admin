@@ -8,7 +8,7 @@
 		font-weight: bold;
 		text-decoration: none;
 		line-height: $grid-y * 2;
-		color: lighten($color-text-dark, 10%);
+		color: lighten($color-text-dark, 20%);
 		border: 1px solid $color-button-generic-border;
 		border-bottom: 1px solid $color-button-generic-border;
 		cursor: pointer;
@@ -26,12 +26,16 @@
 
 		&.ui-state-hover, &:hover {
 			text-decoration: none;
+			background: lighten($color-button-generic, 10%);
 			background-color: lighten($color-button-generic, 10%);
+			box-shadow: none;
 		}
 
 		&:active, &:focus, &.ui-state-active, &.ui-state-focus {
 			border: 1px solid darken($color-button-generic, 20%);
+			background: lighten($color-button-generic, 10%);
 			background-color: lighten($color-button-generic, 10%);
+			box-shadow: none;
 		}
 
 		&.ss-ui-action-minor {
@@ -46,19 +50,19 @@
 			text-shadow:none;
 			font-weight: bold;
 			color: $color-text-light;
-			border-color: #02a781;
-			border-bottom-color: #02a781;
-			background-color: #02a781;
-			background: #02a781;
+			border-color: #016b52;
+			border-bottom-color: #016b52;
+			background-color: #27ae60;
+			background: #27ae60;
 
 			&.ui-state-hover, &:hover {
 				border-color: #016b52;
-				background-color: #01755a;
-				background: #01755a;
+				background-color: lighten(#27ae60, 4%);
+				background: lighten(#27ae60, 4%);
 			}
 			&:active, &:focus, &.ui-state-active, &.ui-state-focus {
-				background-color: #01755a;
-				background: #01755a;
+				background-color: lighten(#27ae60, 4%);
+				background: lighten(#27ae60, 4%);
 			}
 		}
 
@@ -96,6 +100,15 @@
 			}
 		}
 
+	}
+
+	.field input.text, .field textarea, .field .TreeDropdownField{
+			background: #FAFAFA;
+			border: 1px solid #adadae;
+	}
+
+	.field label.left{
+		color: #555;
 	}
 
 }

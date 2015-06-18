@@ -55,22 +55,23 @@
 .ui-tabs.cms-tabset-primary .ui-tabs-nav,
 .ui-tabs .ui-tabs-nav.cms-tabset-nav-primary,
 .ui-tabs .cms-content-header-tabs .ui-tabs-nav {
-	border-left: 1px solid darken($color-tab, 15%);
+	border-left: none;
 
 	.ui-state-default {
-		background-color: $color-base;
-		background: $color-base;
+		background-color: darken(#e6eaed, 5%);
+		background: darken(#e6eaed, 5%);
 		outline: none;
 
 		border-top:none;
 		border: {
-			right-color: lighten($color-base, 2%);
-			left-color: lighten($color-base, 1%);
+			right-color: darken(#e6eaed, 10%);
+			left-color: darken(#e6eaed, 10%);
 		}
 
 		a{
-			color: $color-text-light;
+			color: #000;
 			text-shadow: none;
+			font-weight: normal;
 		}
 
 	}
@@ -80,12 +81,14 @@
 		border-top: none;
 		border: {
 			right-color: darken($color-tab, 15%); // same color as divider between header and body, needed for IE
-			left-color: $tab-panel-texture-color;
+			left-color: darken($color-tab, 15%);
 		}
 
 		a{
 			color: $color-text-dark;
 			text-shadow: none;
+			font-weight: bold;
+			outline: none;
 		}
 	}
 }
@@ -147,6 +150,11 @@
 
 
 // no longer works with white icons. TODO: make dark copies.
+.cms-content-header .cms-content-header-info a.cms-panel-link{
+	color: #444;
+	text-decoration: underline;
+}
+
 .cms-content-header .cms-content-header-info .section-icon{
 	display: none;
 }
