@@ -23,5 +23,5 @@ I'm a developer so I'd be keen for an actual designer to suggest some changes. I
 - In Progress: customise GridField to suit the new colors .e.g. remove texture
 - ~~change icons in menu to be white~~
 - In Progress: change icons used in buttons, something a bit more moder and no drop shadow will be nice.
-- remove any textures and dropwshadows in other parts of the interface.
+- In Progress: remove any textures and dropwshadows in other parts of the interface.
 - Responsiveness? Could add some simple media queries to make it usable on modiles/tablets.
