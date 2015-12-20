@@ -4,6 +4,7 @@
   "type": "silverstripe-module",
   "homepage": "https://github.com/mediabeastnz/silverstripe-flat-admin",
   "keywords": ["silverstripe", "theme", "flat", "admin", "mediabeast"],
+  "license": "MIT",
   "authors": [
     {
       "name": "Myles Beardsmore",
