@@ -5,12 +5,12 @@
 .cms {
 	.ss-ui-button {
 		margin-top:0px;
-		font-weight: bold;
+		font-weight: normal;
 		text-decoration: none;
 		line-height: $grid-y * 2;
 		color: lighten($color-text-dark, 20%);
-		border: 1px solid $color-button-generic-border;
-		border-bottom: 1px solid $color-button-generic-border;
+		border: none;
+		border-bottom: none;
 		cursor: pointer;
 		background-color: $color-button-generic;
 		background: $color-button-generic;
@@ -26,16 +26,16 @@
 
 		&.ui-state-hover, &:hover {
 			text-decoration: none;
-			background: lighten($color-button-generic, 10%);
-			background-color: lighten($color-button-generic, 10%);
+			background: darken($color-button-generic, 10%);
+			background-color: darken($color-button-generic, 10%);
 			box-shadow: none;
 		}
 
 		&:active, &:focus, &.ui-state-active, &.ui-state-focus {
-			border: 1px solid darken($color-button-generic, 20%);
+			border: none;
 			background: lighten($color-button-generic, 10%);
 			background-color: lighten($color-button-generic, 10%);
-			box-shadow: none;
+			box-shadow: none !important;
 		}
 
 		&.ss-ui-action-minor {
@@ -48,21 +48,21 @@
 		/* constructive */
 		&.ss-ui-action-constructive {
 			text-shadow:none;
-			font-weight: bold;
+			font-weight: normal;
 			color: $color-text-light;
 			border-color: #016b52;
 			border-bottom-color: #016b52;
-			background-color: #27ae60;
-			background: #27ae60;
+			background-color: #48AB42;
+			background: #48AB42;
 
 			&.ui-state-hover, &:hover {
 				border-color: #016b52;
-				background-color: lighten(#27ae60, 4%);
-				background: lighten(#27ae60, 4%);
+				background-color: lighten(#48AB42, 4%);
+				background: lighten(#48AB42, 4%);
 			}
 			&:active, &:focus, &.ui-state-active, &.ui-state-focus {
-				background-color: lighten(#27ae60, 4%);
-				background: lighten(#27ae60, 4%);
+				background-color: lighten(#48AB42, 4%);
+				background: lighten(#48AB42, 4%);
 			}
 		}
 

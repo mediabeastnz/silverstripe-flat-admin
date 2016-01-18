@@ -12,14 +12,14 @@
 /** ----------------------------------------------------
 * Buttons
 * ---------------------------------------------------- */
-.cms .ss-ui-button { margin-top: 0px; font-weight: bold; text-decoration: none; line-height: 16px; color: #525252; border: 1px solid #ccc; border-bottom: 1px solid #ccc; cursor: pointer; background-color: #f1f1f1; background: #f1f1f1; white-space: nowrap; -moz-border-radius: 0px; -webkit-border-radius: 0px; -khtml-border-radius: 0px; border-radius: 0px; box-shadow: none; -moz-box-shadow-inset: none; -webkit-box-shadow-inset: none; -khtml-box-shadow-inset: none; /* constructive */ /* destructive */ }
-.cms .ss-ui-button.ui-state-hover, .cms .ss-ui-button:hover { text-decoration: none; background: white; background-color: white; box-shadow: none; }
-.cms .ss-ui-button:active, .cms .ss-ui-button:focus, .cms .ss-ui-button.ui-state-active, .cms .ss-ui-button.ui-state-focus { border: 1px solid #bebebe; background: white; background-color: white; box-shadow: none; }
+.cms .ss-ui-button { margin-top: 0px; font-weight: normal; text-decoration: none; line-height: 16px; color: #525252; border: none; border-bottom: none; cursor: pointer; background-color: #f2f2f2; background: #f2f2f2; white-space: nowrap; -moz-border-radius: 0px; -webkit-border-radius: 0px; -khtml-border-radius: 0px; border-radius: 0px; box-shadow: none; -moz-box-shadow-inset: none; -webkit-box-shadow-inset: none; -khtml-box-shadow-inset: none; /* constructive */ /* destructive */ }
+.cms .ss-ui-button.ui-state-hover, .cms .ss-ui-button:hover { text-decoration: none; background: #d9d9d9; background-color: #d9d9d9; box-shadow: none; }
+.cms .ss-ui-button:active, .cms .ss-ui-button:focus, .cms .ss-ui-button.ui-state-active, .cms .ss-ui-button.ui-state-focus { border: none; background: white; background-color: white; box-shadow: none !important; }
 .cms .ss-ui-button.ss-ui-action-minor span { padding-left: 0; padding-right: 0; }
-.cms .ss-ui-button.ss-ui-action-constructive { text-shadow: none; font-weight: bold; color: white; border-color: #016b52; border-bottom-color: #016b52; background-color: #27ae60; background: #27ae60; }
-.cms .ss-ui-button.ss-ui-action-constructive.ui-state-hover, .cms .ss-ui-button.ss-ui-action-constructive:hover { border-color: #016b52; background-color: #2bbf69; background: #2bbf69; }
-.cms .ss-ui-button.ss-ui-action-constructive:active, .cms .ss-ui-button.ss-ui-action-constructive:focus, .cms .ss-ui-button.ss-ui-action-constructive.ui-state-active, .cms .ss-ui-button.ss-ui-action-constructive.ui-state-focus { background-color: #2bbf69; background: #2bbf69; }
-.cms .ss-ui-button.ss-ui-action-destructive { color: #f00; background-color: #f1f1f1; }
+.cms .ss-ui-button.ss-ui-action-constructive { text-shadow: none; font-weight: normal; color: white; border-color: #016b52; border-bottom-color: #016b52; background-color: #48AB42; background: #48AB42; }
+.cms .ss-ui-button.ss-ui-action-constructive.ui-state-hover, .cms .ss-ui-button.ss-ui-action-constructive:hover { border-color: #016b52; background-color: #4fb949; background: #4fb949; }
+.cms .ss-ui-button.ss-ui-action-constructive:active, .cms .ss-ui-button.ss-ui-action-constructive:focus, .cms .ss-ui-button.ss-ui-action-constructive.ui-state-active, .cms .ss-ui-button.ss-ui-action-constructive.ui-state-focus { background-color: #4fb949; background: #4fb949; }
+.cms .ss-ui-button.ss-ui-action-destructive { color: #f00; background-color: #f2f2f2; }
 .cms .ss-ui-button.ss-ui-button-small .ui-button-text { font-size: 10px; }
 .cms .ss-ui-button.ui-state-highlight { background-color: #e6e6e6; border: 1px solid #708284; }
 .cms .ss-ui-button.ss-ui-action-minor { background: none; border: 0; color: #393939; text-decoration: underline; }
@@ -31,19 +31,31 @@
 .cms-menu .cms-panel-toggle.south { border-top: 1px solid #183044; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
 .cms-menu .cms-panel-toggle a span { color: white; }
 
-.cms-content-header { background-image: url(../../framework/admin/images/textures/cms_content_header.png); background-repeat: repeat; background-position: left bottom; background-color: #eee; }
+.cms-content-header { background-color: #fff; }
 
-.cms-content-tools { background: #eee; }
+.cms-content-tools { background: #fff; }
+
+.cms .cms-content-fields { background-color: #F1F1F1; }
+
+.cms .cms-content-actions { background: #fff; }
 
 .cms-content-batchactions .view-mode-batchactions-wrapper { border: 1px solid #aaa; background-color: #D9D9D9; background: #D9D9D9; border-radius: 0; border-top-left-radius: 0px; border-bottom-left-radius: 0px; }
 
 .cms-content-batchactions.inactive .view-mode-batchactions-wrapper { border: 1px solid #aaa; background-color: #D9D9D9; background: #D9D9D9; border-radius: 0; border-top-left-radius: 0px; border-bottom-left-radius: 0px; }
 
+.cms .ss-ui-action-tabset.action-menus.ss-tabset .ui-tabs-panel { background-color: #FFF; }
+
+.ui-tabs-nav .ui-tabs-anchor { border: none !important; }
+
 .ui-tabs.cms-tabset-primary .ui-tabs-nav, .ui-tabs .ui-tabs-nav.cms-tabset-nav-primary, .ui-tabs .cms-content-header-tabs .ui-tabs-nav { border-left: none; }
-.ui-tabs.cms-tabset-primary .ui-tabs-nav .ui-state-default, .ui-tabs .ui-tabs-nav.cms-tabset-nav-primary .ui-state-default, .ui-tabs .cms-content-header-tabs .ui-tabs-nav .ui-state-default { background-color: #d7dee2; background: #d7dee2; outline: none; border-top: none; border-right-color: #c8d1d8; border-left-color: #c8d1d8; }
+.ui-tabs.cms-tabset-primary .ui-tabs-nav .ui-state-default, .ui-tabs .ui-tabs-nav.cms-tabset-nav-primary .ui-state-default, .ui-tabs .cms-content-header-tabs .ui-tabs-nav .ui-state-default { background-color: #FFF; background: #FFF; outline: none !important; border: none !important; }
 .ui-tabs.cms-tabset-primary .ui-tabs-nav .ui-state-default a, .ui-tabs .ui-tabs-nav.cms-tabset-nav-primary .ui-state-default a, .ui-tabs .cms-content-header-tabs .ui-tabs-nav .ui-state-default a { color: #000; text-shadow: none; font-weight: normal; }
-.ui-tabs.cms-tabset-primary .ui-tabs-nav .ui-state-active, .ui-tabs .ui-tabs-nav.cms-tabset-nav-primary .ui-state-active, .ui-tabs .cms-content-header-tabs .ui-tabs-nav .ui-state-active { background: #e6eaed; border-top: none; border-right-color: #b3b3b3; border-left-color: #b3b3b3; }
-.ui-tabs.cms-tabset-primary .ui-tabs-nav .ui-state-active a, .ui-tabs .ui-tabs-nav.cms-tabset-nav-primary .ui-state-active a, .ui-tabs .cms-content-header-tabs .ui-tabs-nav .ui-state-active a { color: #1f1f1f; text-shadow: none; font-weight: bold; outline: none; }
+.ui-tabs.cms-tabset-primary .ui-tabs-nav .ui-state-active, .ui-tabs .ui-tabs-nav.cms-tabset-nav-primary .ui-state-active, .ui-tabs .cms-content-header-tabs .ui-tabs-nav .ui-state-active { background: #FFF; border: none; }
+.ui-tabs.cms-tabset-primary .ui-tabs-nav .ui-state-active a, .ui-tabs .ui-tabs-nav.cms-tabset-nav-primary .ui-state-active a, .ui-tabs .cms-content-header-tabs .ui-tabs-nav .ui-state-active a { color: #1f1f1f; text-shadow: none; font-weight: normal; color: #0c8db9; outline: none; border-bottom: 1px solid #0c8db9 !important; }
+
+.ui-tabs .ui-tabs-nav .ui-state-active { background-color: #F1F1F1; }
+
+.ui-tabs .ui-tabs-nav .ui-state-default a { font-weight: normal; }
 
 .icon-16.icon-assetadmin { background: url("../images/picture.png"); }
 
@@ -61,15 +73,15 @@
 
 .icon-16.icon-help { background: url("../images/information.png"); }
 
-.ui-icon.btn-icon-add { background: url("../images/add.png"); }
+.ui-icon.btn-icon-add { background: url("../images/add.png"); background-size: 13px 13px; background-repeat: no-repeat; background-position: center; }
 
-.ui-icon.btn-icon-accept { background: url("../images/accept.png"); }
+.ui-icon.btn-icon-accept { background: url("../images/accept.png"); background-size: 13px 13px; background-repeat: no-repeat; background-position: center; }
 
-.ui-icon.btn-icon-pencil { background: url("../images/edit.png"); }
+.ui-icon.btn-icon-pencil { background: url("../images/edit.png"); background-size: 13px 13px; background-repeat: no-repeat; background-position: center; }
 
-.ui-icon.btn-icon-cross-circle { background: url("../images/cross.png"); margin-top: -6px; }
+.ui-icon.btn-icon-cross-circle { background: url("../images/cross.png"); background-size: 13px 13px; background-repeat: no-repeat; background-position: center; margin-top: -6px; }
 
-.col-buttons .action.action-detail.edit-link { width: 16px; height: 16px; background: url("../images/edit.png") no-repeat top center; }
+.col-buttons .action.action-detail.edit-link { width: 16px; height: 16px; background: url("../images/edit.png") no-repeat top center; background-size: 13px 13px; background-repeat: no-repeat; background-position: center; }
 
 .ss-ui-action-constructive .ui-icon.btn-icon-accept { background: url("../images/accept-light.png"); }
 
@@ -88,6 +100,8 @@
 .cms .ss-gridfield .right .pagination-records-number, .cms table.ss-gridfield-table tr td.bottom-all .pagination-records-number { color: #666; text-shadow: none; }
 
 .cms table.ss-gridfield-table tr th button.ss-ui-button.ss-gridfield-button-filter.trigger { background: url(../../framework/images/icons/filter-icons.png) no-repeat -17px -38px; }
+
+.ui-dialog { background: #f1f1f1 !important; }
 
 /** Styles for the left hand side menu and header for the admin panels.  Take into consideration CSS selector performance.  @package framework @subpackage admin */
 .cms-logo-header { background: #1b354c; border-bottom: 1px solid #183044; }
