@@ -1,12 +1,12 @@
 # Flat Admin for SilverStripe
-####Custom CSS for the SilverStripe 3.1 CMS Admin Interface.
+####Custom CSS for the SilverStripe 3.2 CMS Admin Interface.
 
 This module basic overrides some basic CSS that is found in the SilverStripe framework.
 
 ###Installation:
 ####Composer:
 ```
-require: "mediabeast/flat-admin": "dev-master"
+require: "mediabeast/flat-admin": "3.2"
 ```
 ###Download:
 Clone or download this repo, copy it into your website folder, rename the folder to `flat-admin` and then run `dev/build`.
