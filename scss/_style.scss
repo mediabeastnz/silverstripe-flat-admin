@@ -104,12 +104,23 @@
 	}
 }
 
-.ui-tabs .ui-tabs-nav .ui-state-active {
-	background-color: #F1F1F1;
-}
-
 .ui-tabs .ui-tabs-nav .ui-state-default a{
 	font-weight: normal;
+	outline: none !important;
+}
+
+.ui-tabs .ui-tabs-nav .ui-state-default {
+	background-color: #fff;
+	border-radius: 0px !important;
+	border-color: #fff !important;
+}
+
+.ui-tabs .ui-tabs-nav .ui-state-active {
+	background-color: #F1F1F1 !important;
+	border-left: 1px solid #ccc !important;
+	border-right: 1px solid #ccc !important;
+	border-top: 1px solid #ccc !important;
+	border-bottom: none;
 }
 
 // override icons manually TODO: make sprites
@@ -253,4 +264,8 @@
 // ui dialog
 .ui-dialog {
 	background: #f1f1f1 !important;
+}
+
+iframe body.SecurityAdmin {
+	background-color: #F1F1F1 !important;
 }

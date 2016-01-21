@@ -53,9 +53,11 @@
 .ui-tabs.cms-tabset-primary .ui-tabs-nav .ui-state-active, .ui-tabs .ui-tabs-nav.cms-tabset-nav-primary .ui-state-active, .ui-tabs .cms-content-header-tabs .ui-tabs-nav .ui-state-active { background: #FFF; border: none; }
 .ui-tabs.cms-tabset-primary .ui-tabs-nav .ui-state-active a, .ui-tabs .ui-tabs-nav.cms-tabset-nav-primary .ui-state-active a, .ui-tabs .cms-content-header-tabs .ui-tabs-nav .ui-state-active a { color: #1f1f1f; text-shadow: none; font-weight: normal; color: #0c8db9; outline: none; border-bottom: 1px solid #0c8db9 !important; }
 
-.ui-tabs .ui-tabs-nav .ui-state-active { background-color: #F1F1F1; }
+.ui-tabs .ui-tabs-nav .ui-state-default a { font-weight: normal; outline: none !important; }
 
-.ui-tabs .ui-tabs-nav .ui-state-default a { font-weight: normal; }
+.ui-tabs .ui-tabs-nav .ui-state-default { background-color: #fff; border-radius: 0px !important; border-color: #fff !important; }
+
+.ui-tabs .ui-tabs-nav .ui-state-active { background-color: #F1F1F1 !important; border-left: 1px solid #ccc !important; border-right: 1px solid #ccc !important; border-top: 1px solid #ccc !important; border-bottom: none; }
 
 .icon-16.icon-assetadmin { background: url("../images/picture.png"); }
 
@@ -102,6 +104,8 @@
 .cms table.ss-gridfield-table tr th button.ss-ui-button.ss-gridfield-button-filter.trigger { background: url(../../framework/images/icons/filter-icons.png) no-repeat -17px -38px; }
 
 .ui-dialog { background: #f1f1f1 !important; }
+
+iframe body.SecurityAdmin { background-color: #F1F1F1 !important; }
 
 /** Styles for the left hand side menu and header for the admin panels.  Take into consideration CSS selector performance.  @package framework @subpackage admin */
 .cms-logo-header { background: #1b354c; border-bottom: 1px solid #183044; }
