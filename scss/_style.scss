@@ -269,3 +269,27 @@
 iframe body.SecurityAdmin {
 	background-color: #F1F1F1 !important;
 }
+
+// Fancy Dev-Build Module customisation
+.devbuild-trigger.loading {
+    color: rgb(249, 191, 59);
+
+    .icon {
+      color: rgb(249, 191, 59);
+    }
+}
+
+.devbuild-trigger.error {
+    color: rgb(239, 72, 54);
+
+    .icon {
+      color: rgb(239, 72, 54);
+    }
+}
+
+.devbuild-trigger.success {
+    color: #3EBAE0;
+    .icon {
+      color: #3EBAE0;
+    }
+}

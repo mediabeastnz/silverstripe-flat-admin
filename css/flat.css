@@ -107,6 +107,15 @@
 
 iframe body.SecurityAdmin { background-color: #F1F1F1 !important; }
 
+.devbuild-trigger.loading { color: #f9bf3b; }
+.devbuild-trigger.loading .icon { color: #f9bf3b; }
+
+.devbuild-trigger.error { color: #ef4836; }
+.devbuild-trigger.error .icon { color: #ef4836; }
+
+.devbuild-trigger.success { color: #3EBAE0; }
+.devbuild-trigger.success .icon { color: #3EBAE0; }
+
 /** Styles for the left hand side menu and header for the admin panels.  Take into consideration CSS selector performance.  @package framework @subpackage admin */
 .cms-logo-header { background: #1b354c; border-bottom: 1px solid #183044; }
 .cms-logo-header span { color: white; }
