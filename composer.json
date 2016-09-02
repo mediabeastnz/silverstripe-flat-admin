@@ -15,8 +15,7 @@
     "issues": "https://github.com/mediabeastnz/silverstripe-flat-admin/issues"
   },
   "require": {
-    "silverstripe/framework": "~3.2",
-    "silverstripe/cms": "~3.2"
+    "silverstripe/framework": "~3.2"
   },
   "extra": {
     "screenshots": [
